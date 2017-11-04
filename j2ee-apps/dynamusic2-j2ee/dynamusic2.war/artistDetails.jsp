@@ -76,12 +76,9 @@
                             <!-- Chapter 1 Lab Impact: This section was added to accomodate the new albums property -->
                             <p>Albums:
                                     <dsp:setvalue param="artistId" paramvalue="element.id"/>
-                                <dsp:droplet name="/atg/dynamo/droplet/RQLQueryForEach">
-                                    <dsp:param name="queryRQL" value="artists INCLUDES :element"/>
-                                    <dsp:param name="repository" value="/dynamusic/SongsRepository"/>
-                                    <dsp:param name="itemDescriptor" value="album"/>
-                                    <dsp:param name="elementName" value="album"/>
-
+                                <dsp:droplet name="/atg/dynamo/droplet/ForEach">
+                                    <dsp:param name="array" param="element.albums"/>
+                                    <dsp:param name="album" param="element"/>
                                 <dsp:oparam name="outputStart">
                             <ul>
                                 </dsp:oparam>
@@ -89,26 +86,24 @@
                             </ul>
                             </dsp:oparam>
                             <dsp:oparam name="output">
-
-                            <li>
-                                <dsp:a href="albumDetails.jsp">
-                                    <dsp:param name="itemId" param="album.id"/>
-                                    <dsp:valueof param="album.title"/>
-                                </dsp:a>
-
-                                </dsp:oparam>
-                                <dsp:oparam name="empty">
+                                <li>
+                                    <dsp:a href="albumDetails.jsp">
+                                        <dsp:param name="itemId" param="element.id"/>
+                                        <dsp:valueof param="element.title"/>
+                                    </dsp:a>
+                                </li>
+                            </dsp:oparam>
+                            <dsp:oparam name="empty">
                                 No albums found for this artist.
-                                </dsp:oparam>
+                            </dsp:oparam>
 
-                                </dsp:droplet>
-
-
+                            </dsp:droplet>
                         </font>
                     </td>
 
 
-                    <!-- *** End real content *** --></td>
+                    <!-- *** End real content *** -->
+                    </td>
                 </tr>
             </table>
 
