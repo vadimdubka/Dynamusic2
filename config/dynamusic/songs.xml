@@ -71,19 +71,31 @@
             <property name="id" data-type="string"/>
             <property name="title" column-name="title" data-type="string"/>
             <property name="coverURL" column-name="cover" data-type="string"/>
-            <property name="description" column-name="description"
-                      data-type="string"/>
+            <property name="description" column-name="description" data-type="string"/>
             <property name="date" column-name="published" data-type="timestamp"/>
             <property name="artist" column-name="artist" item-type="artist"/>
+            <property name="albumGenre" column-name="genre" data-type="enumerated">
+                <attribute name="useCodeForValue" value="false"/>
+                <option value="jazz"/>
+                <option value="country"/>
+                <option value="pop"/>
+                <option value="blues"/>
+                <option value="classical"/>
+            </property>
         </table>
         <table name="dynamusic_album_songs" type="multi" id-column-name="album_id">
-            <property name="songList" data-type="set"
-                      component-item-type="song" column-name="song_list" cascade="delete"/>
+            <property name="songList" data-type="set" component-item-type="song" column-name="song_list"
+                      cascade="delete"/>
         </table>
         <table name="dynamusic_artist_album" type="multi" id-column-name="album_id">
             <property name="artists" data-type="set" column-name="artist_id" component-item-type="artist"/>
         </table>
-    </item-descriptor>
 
+        <property name="genre" data-type="string" writable="true">
+            <derivation override-property="albumGenre">
+                <expression>artist.artistGenre</expression>
+            </derivation>
+        </property>
+    </item-descriptor>
 
 </gsa-template>

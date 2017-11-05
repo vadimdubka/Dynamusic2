@@ -54,11 +54,12 @@
                                         <font face="Geneva,Arial" size="-1">
                                             <dsp:valueof param="element.description"/>
 
-                                            <b><p>Published: <dsp:valueof param="element.date" date="MMM dd,yyyy"/><b>
+                                            <b><p>Published: <dsp:valueof param="element.date" date="MMM dd,yyyy"/></b>
                                         </font>
                                     </td>
                                 </tr>
                             </table>
+                            <p><b>Genre: <dsp:valueof param="element.genre"/></b></p>
                             <!-- Chapter 1 Lab Impact: This ForEach was added to accomodate the new artists property -->
                             Artists:<br>
                             <dsp:droplet name="/atg/dynamo/droplet/ForEach">
