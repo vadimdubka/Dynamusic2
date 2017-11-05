@@ -31,7 +31,7 @@
                     <td width="100" bgcolor="ghostwhite" valign="top">
                         <!-- (replace contents of this table cell by
                               dynamically including common/sidebar.html) -->
-                        <dsp:include page="common/sidebar.jsp"></dsp:include>
+                        <dsp:include page="common/sidebar.jsp"/>
                         <hr>
                         <dsp:a href="newSong.jsp">
                             <dsp:param name="albumId" param="itemId"/>

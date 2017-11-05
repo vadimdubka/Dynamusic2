@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ee1a8b2-ad3c-4e9e-ab93-984c6757cd52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/artistDetails.jsp" afterPath="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/artistDetails.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/home.jsp" afterPath="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/dynamusic/songs.xml" afterPath="$PROJECT_DIR$/config/dynamusic/songs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/albumDetails.jsp" afterPath="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/albumDetails.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/song.jsp" afterPath="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/song.jsp" />
     </list>
     <ignored path="Dynamusic2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +26,38 @@
     <favorites_list name="Dynamusic2" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="dynamusic.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/dynamusic.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="songs.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/dynamusic/songs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="song.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/song.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,11 +73,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/config/dynamusic/songs.xml" />
         <option value="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/newAlbum.jsp" />
-        <option value="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/albumDetails.jsp" />
         <option value="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/home.jsp" />
         <option value="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/artistDetails.jsp" />
+        <option value="$PROJECT_DIR$/config/dynamusic/songs.xml" />
+        <option value="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/albumDetails.jsp" />
+        <option value="$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/song.jsp" />
       </list>
     </option>
   </component>
@@ -115,6 +147,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamusic2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamusic2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="j2ee-apps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -142,6 +188,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dynamusic2.war" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamusic2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamusic2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamusic2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamusic2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dynamusic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,6 +505,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dev 2 Ch 1. Additional tag." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dev 2 Ch 1. Additional tag." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -495,22 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/albumDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/artistDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/newAlbum.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -521,10 +587,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sql/dynamusic.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/artistDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/albumDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-383">
+          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/dynamusic/songs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="59" column="75" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
+        <state relative-caret-position="408">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j2ee-apps/dynamusic2-j2ee/dynamusic2.war/song.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
           <folding />
         </state>
       </provider>
