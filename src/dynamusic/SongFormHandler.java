@@ -27,22 +27,20 @@ import atg.servlet.DynamoHttpServletRequest;
 import atg.servlet.DynamoHttpServletResponse;
 
 
-
-
 public class SongFormHandler extends RepositoryFormHandler {
-
-    private SongsManager mSM;
+    
+    private SongsManager songsManager;
     private String mAlbumId;
     private String mArtistId;
     
     // Property methods
     
     public SongsManager getSongsManager() {
-        return mSM;
+        return songsManager;
     }
     
     public void setSongsManager(SongsManager pSM) {
-        mSM = pSM;
+        songsManager = pSM;
     }
     
     public String getAlbumId() {
@@ -52,7 +50,7 @@ public class SongFormHandler extends RepositoryFormHandler {
     public void setAlbumId(String pAlbumId) {
         mAlbumId = pAlbumId;
     }
-
+    
     public String getArtistId() {
         return mArtistId;
     }
@@ -60,27 +58,23 @@ public class SongFormHandler extends RepositoryFormHandler {
     public void setArtistId(String pArtistId) {
         mArtistId = pArtistId;
     }
-
-    protected void postCreateItem(DynamoHttpServletRequest pRequest, 
-                         DynamoHttpServletResponse pResponse) 
-                      throws javax.servlet.ServletException,
-                              java.io.IOException {
-     
-       	if (isLoggingDebug())
-  		logDebug("postCreateItem called, item created: " + getRepositoryItem());
-  	        
-
-        SongsManager sm = getSongsManager();
     
+    
+    protected void postCreateItem(DynamoHttpServletRequest pRequest, DynamoHttpServletResponse pResponse) throws javax.servlet.ServletException, java.io.IOException {
+        
+        if (isLoggingDebug())
+            logDebug("postCreateItem called, item created: " + getRepositoryItem());
+        
+        SongsManager sm = getSongsManager();
+        
         try {
-           sm.addSongToAlbum(getRepositoryId(),getAlbumId());
-           sm.addArtistToSong(getRepositoryId(),getArtistId());
+            sm.addSongToAlbum(getRepositoryId(), getAlbumId());
+            sm.addArtistToSong(getRepositoryId(), getArtistId());
+            sm.fireNewSongMessage(getRepositoryItem());
+        } catch (RepositoryException e) {
+            if (isLoggingError())
+                logError("Cannot add song to album", e);
+            addFormException(new DropletException("Cannot add song to album"));
         }
-        catch (RepositoryException e) {
-           if (isLoggingError())
-                   logError("Cannot add song to album", e);
-                addFormException(new DropletException("Cannot add song to album"));
-
-        }
-   } 
+    }
 }
